@@ -1,7 +1,8 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 // Import pages.
 import HomePage from "../views/HomePage.vue";
+import ChapterDetailPage from "../views/ChapterDetailPage.vue";
 
 // Define paths for routing.
 /**
@@ -22,7 +23,8 @@ class Endpoint {
  * This object contains all routing endpoints of this app.
  */
 const endpoints = {
-	HomePage: new Endpoint("/", "home")
+	HomePage: new Endpoint("/", "home"),
+	ChapterDetailPage: new Endpoint("/chapter/:id", "chapter")
 };
 
 const routes = [
@@ -30,11 +32,16 @@ const routes = [
 		path: endpoints.HomePage.path,
 		name: endpoints.HomePage.name,
 		component: HomePage
+	},
+	{
+		path: endpoints.ChapterDetailPage.path,
+		name: endpoints.ChapterDetailPage.name,
+		component: ChapterDetailPage
 	}
 ];
 
 const router = createRouter({
-	history: createWebHashHistory(),
+	history: createWebHistory(),
 	routes
 });
 
