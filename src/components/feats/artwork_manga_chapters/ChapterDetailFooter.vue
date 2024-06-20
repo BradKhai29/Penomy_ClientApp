@@ -69,22 +69,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-.my-text-light {
-    color: #f1e6d6;
-}
-
-.my-bg-secondary {
-    background-color: #f1e6d6;
-    border: 2px solid #4f6f52 !important;
-}
-
-.my-text-primary {
-    color: #4f6f52;
-}
-
-.my-bg-primary {
-    background-color: #4f6f52;
-}
-</style>

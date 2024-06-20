@@ -25,39 +25,3 @@
         </button>
     </div>
 </template>
-
-<style scoped>
-.bg-tertiary {
-    background-color: #FFBB51;
-}
-
-.my-text-light {
-    color: #F1E6D6;
-}
-
-.my-bg-secondary {
-    background-color: #F1E6D6;
-    border: 2px solid #4F6F52!important;
-}
-
-.text-tertiary {
-    color: #FFBB51!important;
-}
-
-.my-bg-light {
-    background-color: #EEEEEE;
-}
-
-.my-primary,
-.my-text-primary {
-    color: #4F6F52;
-}
-
-.my-text-primary::before {
-    color: #4F6F52;
-}
-
-.my-bg-primary {
-    background-color: #4F6F52;
-}
-</style>

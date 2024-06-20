@@ -1,0 +1,44 @@
+:root {
+    --primary-700: #4f6f52;
+    --light-100: #eeeeee;
+    --light-500: #f1e6d6;
+    --tertiary-500: #FFBB51;
+}
+
+.my-text-light {
+    color: var(--light-500);
+}
+
+.my-bg-secondary {
+    background-color: var(--light-500);
+    border: 2px solid var(--primary-700) !important;
+}
+
+.my-primary,
+.my-text-primary {
+    color: var(--primary-700);
+}
+
+.my-text-primary::before {
+    color: var(--primary-700);
+}
+
+.my-bg-primary {
+    background-color: var(--primary-700);
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary-500);
+}
+
+.text-tertiary {
+    color: var(--tertiary-500)!important;
+}
+
+.my-bg-light-2 {
+    background-color: var(--light-500);
+}
+
+.my-bg-light {
+    background-color: var(--light-100);
+}
