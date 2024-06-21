@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // Import pages.
 import HomePage from "../views/HomePage.vue";
 import ChapterDetailPage from "../views/ChapterDetailPage.vue";
+import LoginPage from "../views/auth/LoginPage.vue";
 
 // Define paths for routing.
 /**
@@ -24,7 +25,8 @@ class Endpoint {
  */
 const endpoints = {
 	HomePage: new Endpoint("/", "home"),
-	ChapterDetailPage: new Endpoint("/chapter/:id", "chapter")
+	ChapterDetailPage: new Endpoint("/chapter/:id", "chapter"),
+	LoginPage: new Endpoint("/login", "login")
 };
 
 const routes = [
@@ -37,6 +39,11 @@ const routes = [
 		path: endpoints.ChapterDetailPage.path,
 		name: endpoints.ChapterDetailPage.name,
 		component: ChapterDetailPage
+	},
+	{
+		path: endpoints.LoginPage.path,
+		name: endpoints.LoginPage.name,
+		component: LoginPage
 	}
 ];
 
