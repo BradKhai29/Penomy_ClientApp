@@ -3,7 +3,7 @@
         class="mx-auto col-12 col-sm-8 d-flex justify-content-center flex-column"
     >
         <figure v-for="i in images" :key="i" class="text-center w-100">
-            <img class="w-100" src="https://i.pinimg.com/736x/27/3e/2d/273e2d6bc7405b4c320851e17d1ba0bb.jpg" />
+            <img class="w-100" src="https://i.pinimg.com/736x/11/b4/1a/11b41a9b29d84bcf176dc2dcd0f08661.jpg" />
         </figure>
     </div>
 </template>
